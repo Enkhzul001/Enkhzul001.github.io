@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project page</title>
+  </head>
+  <body>
+    <header>
+      <ul id="navbar">
+        <li><a href="index.html" class="nav-li">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" id="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <h1>Projects</h1>
+      <p>Here are some of my current and past projects.</p>
+      <div class="container">
+        <div class="card">
+          <img class="imgcard" src="project1.jpg" alt="Project1" />
+          <div class="text-container">
+            <h3>Recipe Website</h3>
+            <p class="card-text">
+              This project is a recipe website. You can use ingredients to
+              search for certain recipes.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="imgcard" src="project2.jpg" alt="Project2" />
+          <div class="text-container">
+            <h3>Web-based Calculator</h3>
+            <p class="card-text">
+              This is a simple web project. I used html, javascript, and css to
+              develop a web based calculator.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="imgcard" src="project3.jpg" alt="Project3" />
+          <div class="text-container">
+            <h3>Personal Website</h3>
+            <p class="card-text">
+              This is the first assignment for CSC309. We are required to
+              develop our own personal websites.
+            </p>
+          </div>
+        </div>
+      </div>
+      <p>Need a full stack web developer? Tell me about your project.</p>
+      <form
+        action="https://postman-echo.com/post"
+        id="forms"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="email">Your email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+        /><br />
+        <label for="project">Project Type:</label>
+        <select name="project" id="proj">
+          <option value="Personal Website">Personal Website</option>
+          <option value="Ecommerce">Ecommerce</option>
+          <option value="Game">Game</option></select
+        ><br />
+        <label for="concept">Concept:</label>
+        <textarea
+          id="concept"
+          name="concept"
+          placeholder="Enter your project concept here"
+        ></textarea
+        ><br />
+        <label for="attachments">Attachment:</label>
+        <input type="file" id="attachments" name="attachments" /><br />
+        <input type="checkbox" id="consent" name="consent" value="yes" />
+        <label for="consent" id="check-text"
+          >You agree to receive emails from me</label
+        ><br />
+        <button type="submit" form="forms" value="Submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright 2024 by lkhagvaj.</p>
+    </footer>
+  </body>
+</html>
