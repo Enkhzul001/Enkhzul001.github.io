@@ -119,10 +119,16 @@ footer p {
   display: block;
 }
 
-ul#courses {
+ul#courses,
+ul#past-courses {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  list-style-type: none;
+}
+ul#courses li,
+ul#past-courses li {
+  font-size: 1.1em;
+  margin-bottom: 12px;
 }
 table,
 th,
@@ -282,6 +288,7 @@ h2 {
   margin-bottom: 10px;
   color: #223f48;
 }
+
 div.skills {
   margin-top: 2rem;
 }
